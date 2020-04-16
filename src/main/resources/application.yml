@@ -1,0 +1,12 @@
+--- 
+spring: 
+  profiles:
+    active: dev  
+  datasource: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/followappdb?serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+  jpa:
+    hibernate: 
+      ddl-auto: update
